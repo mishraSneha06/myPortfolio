@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  color: white;
+}
+
+section{
+  background-color: rgb(16, 22, 84)
+}
+
+#skillBox{
+  transition: transform 0.5s ease-in-out;
+  background-color: rgba(4, 4, 120, 0.479);
+}
+
+#skillBox:hover{
+  transform: scale(1.1);
+}
+
+#projectBox{
+  transition: transform 0.5s ease-in-out;
+  background-color: rgba(4, 4, 120, 0.479);
+}
+
+#projectBox:hover{
+  transform: scale(1.1);
+}
+
+#homeImg{
+  animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage{
+  0%{
+      transform: translateY(0);
+  }
+  50%{
+      transform: translateY(-2.5rem);
+  }
+  100%{
+      transform: translateY(0);
+  }
+}
